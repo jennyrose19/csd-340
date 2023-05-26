@@ -1,2 +1,4 @@
-# csd-340
-Repository to host CSD 340 coding assignments
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Matthew Longley
+* Jenny Rosero
