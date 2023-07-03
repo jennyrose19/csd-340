@@ -1,4 +1,4 @@
-<!-- Jenny Rosero: Assignment 2.2 -->
+<!-- Jenny Rosero: Assignment 9.3 -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,21 +11,71 @@
 			content="CSD, 340, assignment" >
 		<meta name="pragma"
 			content="no-cache" >
-		<link rel="stylesheet" type="text/css" href="/Users/jennyrosero/Desktop/csd/csd-340/module-2/rosero_mod2_2.css">
+		<script>
+			var firstVariableValue = "far as I could";
+			var secondVariableValue = "grassy and wanted wear"
+			var thirdVariableValue = "leads on to way,"
+			var fourthVariableValue = "the one less traveled"
+
+			function replaceSpan1() {
+				var span = document.getElementById("line-1");
+				span.innerHTML = firstVariableValue;
+			}
+
+			function replaceSpan2() {
+			var span = document.getElementById("line-2");
+				span.innerHTML = secondVariableValue;
+			}
+
+			function replaceSpan3() {
+			var span = document.getElementById("line-3");
+				span.innerHTML = thirdVariableValue;
+			}
+
+			function replaceSpan4() {
+			var span = document.getElementById("line-4");
+				span.innerHTML = fourthVariableValue;
+			}
+		</script>
 	</head>
 	<body>
 		<div id="container">
-		<h1>Assignment 2.3 - Building a Web Page Excercise - Part 2</h1>
-		<h2>About Me</h2>
+		<h1>Assignment 9.3: JavaScript - Part 1</h1>
+		<h2>The Road Not Taken by Robert Frost</h2>
 		</div>
-		<p class="intro">My name is Jenny Rosero. I was born in Orlando, FL. I moved to Stamford, CT in 2008. Then, I moved to Fort Myers, FL in 2019 and currently reside here.
-		</p>
-		<p>I live with my husband, Daniel. We got married in 2019. We have two dogs. There names are Jamie and Oreo. They are 1.5 and 7 years old.  
-		</p>
-		<p>On the rare occasions that I have spare time, 
-			<span class="sentence"> I enjoy reading, trying new restaurants, and watching TV. </span> I also enjoy traveling to new places. 
-		</p>
-		<p>I am planning to visit Europe for the first time in September. We plan on going to Portugal, Spain, and France. I am very excited to learn about the culture and try new foods.
+		<p>Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as <span id="line-1">____________</span>
+To where it bent in the undergrowth;</p>
+		<p>Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was <span id="line-2">______________________</span>;
+Though as for that the passing there
+Had worn them really about the same,</p>
+		<p>And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way <span id="line-3">_______________</span>,
+I doubted if I should ever come back.</p>
+		<p>I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took <span id="line-4">_____________________</span> by,
+And that has made all the difference.</p>
+		<p>
+			<button type="button"
+				onclick="replaceSpan1()">Add First line</button>
+				<br>
+			<button type="button"
+				onclick="replaceSpan2()">Add Second line</button>
+				<br>
+			<button type="button"
+				onclick="replaceSpan3()">Add Third line</button>
+				<br>
+			<button type="button"
+				onclick="replaceSpan4()">Add Fourth line</button>
+				<br>
 		</p>
 		<hr>
 		<address>
