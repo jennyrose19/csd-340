@@ -1,0 +1,56 @@
+<!-- Jenny Rosero: Assignment 9.3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Development with HTML and CSS</title>
+		<script>
+			function displayImage(imageFile){
+				var img1 = document.getElementbyID("mainImage");
+				var newNode = document.createElement("img");
+				newNode.id = "img1";
+				newNode.src = imageFile;
+				newNode.alt = "Picture"
+				newNode.className = "mainImage"
+				newNode.styel.width = "300px";
+				newNode.style.height = "200px";
+				img1.parentNode.replaceChild(newNode,img1);
+			}
+		</script>
+	</head>
+	<body>
+		<br>
+		<div id="container">
+			<a href=#
+				onmouseover="emjoi.src='image_1.jpg';"
+				onmouseout="emjoi.src='image_2.jpg';"
+			>
+			<img border = 0 name = "emjoi" src = "image_2.jpg">
+		</a>
+	</div>
+	<br>
+	<div
+			onmouseover="this.style.color='blue';"
+			onmouseout="this.style.color='black';">
+		Run your mouse over the image or words to change them.
+	</div>
+	<br>
+	<div>
+		<a href=#
+			onmouseover="scenery.src='image_3.jpg';"
+			onmouseout="scenery.src='image_4.jpg';"
+			>
+			<img border=0 name="scenery" src="image_4.jpg">
+			
+		</a>
+	</div>
+	<br>
+	<div
+		onmouseover="this.style.color='blue';"
+		onmouseout="this.style.color='black';"
+	>
+	Run your mouse over the image or words to change them.
+	</div>
+
+	</body>
+</html>
+</html>
