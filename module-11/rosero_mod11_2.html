@@ -1,0 +1,50 @@
+<!-- Jenny Rosero: Assignment 11.2 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Development with HTML and CSS</title>
+
+		<script>
+			var dataEntries = [];
+
+			function addEntry() {
+				var userInput = document.getElementById("userInput").value;
+				dataEntries.push(userInput);
+				alert("Added: " + userInput);
+				document.getElementById("userInput").value = "";
+			}
+
+			function deleteLastEntry(){
+				if (dataEntries.length > 0) {
+					dataEntries.pop();
+				}
+			}
+
+			function displayEntries() {
+				if (dataEntries.length > 0) {
+					var displayText = ""
+					for (var i = 0; i < dataEntries.length; i++) {
+						displayText += (i+1) + "." + dataEntries[i] + "\n";
+					}
+					alert("Todo List: \n" + displayText);
+				}
+
+				else {
+					alert("The List is empty.");
+				}
+			}
+		</script>
+		
+		</head>
+	<body>
+		<h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+		<form>
+			<label for="textBox">Create your To Do List by typing your entry and clicking Add. Click the Display button to see the itelts on the list. Click the Delete button to remove the last entry.</label><br>
+			<input type="text" id="userInput"><br>
+			<button onclick="addEntry(); return false;">Add</button>
+			<button onclick="deleteLastEntry(); return false;">Delete Last Entry</button>
+			<button onclick="displayEntries(); return false;">Display</button>
+		</form>
+	</body>
+</html>
